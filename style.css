@@ -1,0 +1,108 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #2A2B2A
+  }
+  
+  body {
+    margin: 100;
+    background: #FDFFFC;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h5 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h6 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  .intro {
+    background-color: #B5CBB7;
+    border: 2px solid #818479;
+    padding: 1em;
+  }
+
+  img {
+    float: right;
+    max-height: 100%;
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #2A2B2A;
+  }
+
+  .button {
+    background: #818479;
+    border: none;
+    color: #FDFFFC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background: #D2E4C4;
+    transition: 0.7s
+  }
+
+  .button:active {
+    background: #B5CBB7;
+  }
+
+  a:link {
+    text-decoration-line: underline;
+    color: #B5CBB7;
+  }
+
+  a:hover {
+    text-decoration-line: underline;
+    color: #E7E08B;
+  }
+
+  a:visited {
+    text-decoration-line: underline;
+    color: #818479;
+  }
+
+
