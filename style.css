@@ -4,14 +4,14 @@ html {
   }
   
   body {
-    margin: 100;
+    margin: 0;
     background: #FDFFFC;
   }
 
   h1 {
     font-weight: 700;
     font-size: 45px;
-    line-height: 16px;
+    line-height: 50px;
     letter-spacing: 0.005em;
   }
 
@@ -31,35 +31,34 @@ html {
 
   h4 {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.005em;
   }
 
   h5 {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 16px;
     letter-spacing: 0.005em;
   }
 
   h6 {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 16px;
     letter-spacing: 0.005em;
+  }
+  
+  .mainimg {
+    max-height: 100%;
+    max-width: 200px;
   }
 
   .intro {
     background-color: #B5CBB7;
     border: 2px solid #818479;
     padding: 1em;
-  }
-
-  img {
-    float: right;
-    max-height: 100%;
-
   }
 
   p {
@@ -95,7 +94,7 @@ html {
     color: #B5CBB7;
   }
 
-  a:hover {
+  a:hover { 
     text-decoration-line: underline;
     color: #E7E08B;
   }
@@ -105,4 +104,91 @@ html {
     color: #818479;
   }
 
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
+  nav {
+    background-color: #B5CBB7;
+    border: 2px solid #818479;
+    padding: 1em;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+  body{
+    background-color: #818479;
+  }
+
+  .intro {
+    background-color: #FDFFFC;
+    border: 2px solid #818479;
+    padding: 1em;
+  }
+
+  .grid{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  .mainimg {
+    max-width: 200px;
+    max-height: 300px;
+
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #2A2B2A;
+  }
+
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1900px){
+  
+  .grid{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+}
