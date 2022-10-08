@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 html {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
     color: #2A2B2A
   }
 
@@ -12,7 +10,7 @@ html {
 
   h1 {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 50px;
   }
 
@@ -53,13 +51,12 @@ html {
   
   .mainimg {
     max-height: 100%;
-    max-width: 200px;
+    max-width: 220px;
   }
 
   .intro {
-    background-color: #B5CBB7;
-    border: 2px solid #818479;
     padding: 1em;
+    border: none;
   }
 
   p {
@@ -91,26 +88,26 @@ html {
   }
 
   a:link {
-    text-decoration-line: underline;
     color: #B5CBB7;
+    text-decoration: none;
   }
 
   a:hover { 
-    text-decoration-line: underline;
     color: #E7E08B;
+    text-decoration: underline;
   }
 
-  a:visited {
-    text-decoration-line: underline;
+  a:visited{
     color: #818479;
+    text-decoration: none;
   }
 
   .grid {
-    margin: 0 auto;
+    margin: 3% auto;
     padding: 0 20px;
     max-width: 980px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
   }
 
   .photos {
@@ -123,19 +120,46 @@ html {
     gap: 1px;
   }
 
-  nav {
-    background-color: #B5CBB7;
-    border: 2px solid #818479;
+  .right {
+    border: none;
     padding: 1em;
+    margin: 0% 0% 0% 15%;
   }
 
   nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
     justify-content: space-evenly;
   }
+
+  .contact{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .socialmedia {
+    margin-top: 20%;
+  }
+
+  .socialmedia ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .about {
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+/*mobile*/
 
 @media only screen and (min-width: 0px) {
   body{
@@ -143,8 +167,7 @@ html {
   }
 
   .intro {
-    background-color: #FDFFFC;
-    border: 2px solid #818479;
+    border: none;
     padding: 1em;
   }
 
@@ -164,8 +187,8 @@ html {
   }
 
   .mainimg {
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 100px;
+    max-height: 100%;
 
   }
   h2 {
@@ -195,20 +218,50 @@ html {
     margin: 0;
     padding: 0;
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr;
     gap: 1px;
-
   }
+
+  a:link {
+    color: #FDFFFC;
+    text-decoration: none;
+  }
+
+  a:hover { 
+    color: #FDFFFC;
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: #2A2B2A;
+    text-decoration: none;
+  }
+
+  .contact{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
 }
+
+.socialmedia {
+  margin-top: 20%;
+}
+
+}
+
+/*computer screen*/
 
 @media screen and (min-width: 1000px) {
   
   .grid{
-    margin: 0 auto;
+    margin: 3% auto;
     padding: 0 20px;
     max-width: 980px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
   }
   body {
     margin: 0;
@@ -217,7 +270,7 @@ html {
 
   h1 {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.005em;
   }
@@ -259,13 +312,12 @@ html {
   
   .mainimg {
     max-height: 100%;
-    max-width: 200px;
+    max-width: 220px;
   }
 
   .intro {
-    background-color: #B5CBB7;
-    border: 2px solid #818479;
     padding: 1em;
+    border: none;
   }
   .photos {
     list-style: none;
@@ -304,32 +356,33 @@ html {
     background: #B5CBB7;
   }
 
-  a:link {
-    text-decoration-line: underline;
-    color: #B5CBB7;
-  }
-
-  a:hover { 
-    text-decoration-line: underline;
-    color: #E7E08B;
-  }
-
-  a:visited {
-    text-decoration-line: underline;
-    color: #818479;
-  }
-
-  nav {
-    background-color: #B5CBB7;
-    border: 2px solid #818479;
-    padding: 1em;
-  }
-
   nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
     justify-content: space-evenly;
+  }
+
+  a:link {
+    color: #B5CBB7;
+    text-decoration: none;
+  }
+
+  a:hover { 
+    color: #E7E08B;
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: #818479;
+    text-decoration: none;
+  }
+
+  .contact{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
