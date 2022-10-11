@@ -67,7 +67,7 @@ html {
     color: #2A2B2A;
   }
 
-  .button {
+  button {
     background: #818479;
     border: none;
     color: #FDFFFC;
@@ -78,12 +78,12 @@ html {
     font-size: 16px;
   }
 
-  .button:hover {
+  button:hover {
     background: #D2E4C4;
     transition: 0.7s
   }
 
-  .button:active {
+  button:active {
     background: #B5CBB7;
   }
 
@@ -336,7 +336,7 @@ html {
     color: #2A2B2A;
   }
 
-  .button {
+  button {
     background: #818479;
     border: none;
     color: #FDFFFC;
@@ -347,12 +347,12 @@ html {
     font-size: 16px;
   }
 
-  .button:hover {
+  button:hover {
     background: #D2E4C4;
     transition: 0.7s
   }
 
-  .button:active {
+  button:active {
     background: #B5CBB7;
   }
 
