@@ -158,7 +158,35 @@ html {
     place-items: center;
     grid-template-columns: 1fr;
   }
-  
+
+  .thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+  }
+
+  .displayed-img{
+    width: 640px;
+    height: 480px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+  }
+
+  .full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+  }
+      
 /*mobile*/
 
 @media only screen and (min-width: 0px) {
@@ -385,5 +413,31 @@ html {
     place-items: center;
     grid-template-columns: 1fr 1fr;
   }
+  .thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+  }
+
+  .displayed-img{
+    width: 640px;
+    height: 480px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+  }
+  .full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+  }
+  
 
 }
