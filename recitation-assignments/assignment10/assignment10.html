@@ -46,20 +46,53 @@
       console.log(company);
 
       //Question 3
-      let newEmployee = JSON.parse(myObj);
-      newEmployee["Employees"].push({firstName:"Anna",department:"Tech", designation : "Executive", salary : 25600, raiseEligible : false});
+      let newEmployee = {companyName: "Tech Stars", website: "www.techstars.site", employees:[{ firstName : "Sam", department : "Tech", designation : "Manager", salary : 40000, raiseEligible : true},
+      {firstName : "Mary", department : "Finance", designation : "Trainee", salary : 18500, raiseEligible : true},
+      {firstName : "Bill", department : "HR", designation : "Executive", salary : 21200, raiseEligible : false}]};
       console.log(newEmployee);
-    
+
+      function appendEmployee(list, name, department, designation, salary, raise){
+        let employee = {
+          firstName : "Anna", department : "Tech", designation : "Executive", salary : "25600", raiseEligible : "false"
+        };
+        list['employees'].push(employee);
+      }
+      appendEmployee(newEmployee, "Anna", "Tech", "Executiive", 25600, false);
+
       //Question 4
       let total = 0;
-      for (let i = 0; i < myObj.employees.length; i++){
-      total += myObj.employees[i]['salary'];
+      for (let i = 0; i < newEmployee.employees.length; i++){
+      total += newEmployee.employees[i]['salary'];
       }
       console.log(total);
     
       //Question 5
-      let OldSalary = JSON.company[0].Employees[i].salary;
-      let NewSalary = (OldSalary + 0.1*OldSalary);
+      for(let i = 0; i < newEmployee.employees.length; i++){
+        if(newEmployee.employees[i]['raiseEligible']===true){
+          newEmployee.employees[i]['salary']+=newEmployee.employees[i];
+          newEmployee.employees[i]['raiseEligible']=false;
+        }
+      }
+
+      //Question 6 
+      let wfh = ["Anna","Sam"];
+      for(let i = 0; i < newEmployee.employees.length; i++){
+        let check = false;
+        let name = nevEmployee.employees[i].firstNane;
+        console.log(check);
+      for(let j = 0; j < wfh.length; j++){
+        if (wfh[j] === name){
+          check = true;
+        }
+      }
+      if(check === true){
+        newEmployee['employees'][i].wfh = true;
+      }
+      else {
+        newEmployee['employees'][i].wfh = false;
+      }
+      }
+      console.log(newEmployee);
 
     </script>
   </body>
