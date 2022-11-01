@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Human Resources</title>
+
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script>
+      async function populate() {
+
+      const requestURL = 'hr.json';
+      const request = new Request(requestURL);
+
+      const response = await fetch(request);
+      const techStars = await response.json();
+
+      populateHeader(techStars);
+      populateEmployees(techStars);
+
+      }
+
+      //Question 1 
+
+      let myObj = {"Employees":[{ firstName : "Sam", department : "Tech", designation : "Manager", salary : 40000, raiseEligible : true},
+      {firstName : "Mary", department : "Finance", designation : "Trainee", salary : 18500, raiseEligible : true},
+      {firstName : "Bill", department : "HR", designation : "Executive", salary : 21200, raiseEligible : false}]};
+      console.log(myObj);
+
+      //Question 2
+
+      let company = {companyName: "Tech Stars", website: "www.techstars.site", employees:[{ firstName : "Sam", department : "Tech", designation : "Manager", salary : 40000, raiseEligible : true},
+      {firstName : "Mary", department : "Finance", designation : "Trainee", salary : 18500, raiseEligible : true},
+      {firstName : "Bill", department : "HR", designation : "Executive", salary : 21200, raiseEligible : false}]};
+      console.log(company);
+
+      //Question 3
+      let newEmployee = JSON.parse(myObj);
+      newEmployee["Employees"].push({firstName:"Anna",department:"Tech", designation : "Executive", salary : 25600, raiseEligible : false});
+      console.log(newEmployee);
+    
+      //Question 4
+      let total = 0;
+      for (let i = 0; i < myObj.employees.length; i++){
+      total += myObj.employees[i]['salary'];
+      }
+      console.log(total);
+    
+      //Question 5
+      let OldSalary = JSON.company[0].Employees[i].salary;
+      let NewSalary = (OldSalary + 0.1*OldSalary);
+
+    </script>
+  </body>
+</html>
