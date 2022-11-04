@@ -34,12 +34,12 @@ html {
     border-bottom: 1px solid #ebebeb;
   }
   
-  .names {
+  .activities {
     padding: 20px 50px;
     min-height: 200px;
   }
   
-  .fake-name-text {
+  .activity-text {
     padding-bottom: 20px;
     font-size: 25px;
     color: black;
@@ -72,16 +72,16 @@ html {
     background-color: #1e7fbb;
   }
   
-  .fake-name {
+  .activity {
     background-color: #4A2B0F;
     margin-bottom: 15px;
   }
   
-  .fake-name:hover {
+  .activity:hover {
     background-color: #6d3b0e;
   }
   
-  .fake-name:disabled {
+  .activity:disabled {
     background-color: #cccccc;
     color: #666666;
     cursor: not-allowed;

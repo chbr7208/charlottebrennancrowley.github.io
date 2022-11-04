@@ -1,23 +1,23 @@
 
-const nameButton = document.querySelector('.fake-name');
+const activityButton = document.querySelector('.activity');
 
+activityButton.addEventListener('click', getActivity);
 
+const endpoint = 'https://www.boredapi.com/api/activity';
 
-const endpoint = 'api.namefake.com';
-
-async function getName() {
+async function getActivity() {
     let text = await fetch(endpoint);
        let response = await text.text();
        let json_response = JSON.parse(response);
 
-       console.log(json_response['name']);
+       console.log(json_response['activity']);
 
-        displayName(json_response['name'])
+        displayActivity(json_response['activity'])
 }
 
-function displayName(x){
+function displayActivity(x){
 
-    document.getElementById('js-fake-name-text').textContent = x;
+    document.getElementById('js-activity-text').textContent = x;
 }
 
-getName();
+getActivity();
