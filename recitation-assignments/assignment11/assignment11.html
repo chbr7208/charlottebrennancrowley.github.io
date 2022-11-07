@@ -8,17 +8,19 @@
     <title>Assignment 11</title>
 </head>
 <body>
-  <h1>Bored?</h1>
     <div class="app">
-        <header></header>
+        <header>  <h1>BORED?</h1> </header>
         <section class="activities">
           <div class="activity-text" id="js-activity-text"></div>
+          <div id="Progress_Status">
+            <div id="myprogressBar"></div>
+          </div>
         </section>
         <section class="controls">
-          <button type="button" id="js-activity" class="activity button">
+          <button type="button" id="js-activity" class="activity button" onclick="update()">
             Generate a random activity!
           </button>
-          <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer">Tweet it!</a>
+          <p>for my extension, I added a load bar and styled this activity with the specific CSS I made for it</p>
         </section>
       </div>
       <script src="/js/assignment11.js"></script>
