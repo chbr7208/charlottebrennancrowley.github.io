@@ -2,15 +2,15 @@ const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 console.log(outputInt);
 
-const randomButton = document.querySelector(".random-button").addEventListener('click', random);
-const submitButton = document.querySelector(".submit-button").addEventListener('click', submit);
+const randomButton = document.querySelector(".no-button").addEventListener('click', no);
+const submitButton = document.querySelector(".yes-button").addEventListener('click', yes);
 
 
-function submit() {
+function yes() {
     alert(output.textContent);
 }
 
-function random(){
+function no(){
     outputInt = randomNumber(0, 99999999999);
     output.textContent = outputInt;
 }
