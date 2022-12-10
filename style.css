@@ -1,3 +1,4 @@
+/* ALL pages */
 html {
     font-family: Arial, Helvetica, sans-serif; 
     color: #2A2B2A
@@ -24,6 +25,7 @@ html {
   h3 {
     font-weight: 600;
     font-size: 15px;
+    color: #818479;
     line-height: 16px;
     letter-spacing: 0.005em;
   }
@@ -133,31 +135,23 @@ html {
     justify-content: space-evenly;
   }
 
-  .contact{
-    margin: 0;
-    padding: 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .socialmedia {
-    margin-top: 20%;
-  }
-
-  .socialmedia ul{
-    list-style: none;
-    padding-left: 0;
-  }
-
+/*about page*/
   .about {
     margin-right: 15%;
     margin-left: 15%;
     padding: 0;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 5fr;
   }
+
+/*travel eats page*/
+.full-img {
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 440px;
+}
 
   .thumb-bar img {
     display: block;
@@ -167,25 +161,10 @@ html {
   }
 
   .displayed-img{
-    width: 640px;
-    height: 480px;
+    width: 600px;
+    height: 440px;
   }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 640px;
-    height: 480px;
-    background-color: rgba(0,0,0,0);
-  }
-
-  .full-img {
-    position: relative;
-    display: block;
-    width: 640px;
-    height: 480px;
-  }
       
 /*mobile*/
 
@@ -212,6 +191,13 @@ html {
     font-size: 25px;
     line-height: 16px;
     letter-spacing: 0.005em;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #FDFFFC;
+    padding: .2em;
+    top: 0;
   }
 
   .mainimg {
@@ -219,6 +205,7 @@ html {
     max-height: 100%;
 
   }
+
   h2 {
     font-weight: 600;
     font-size: 15px;
@@ -273,11 +260,31 @@ html {
     place-items: center;
     grid-template-columns: 1fr;
 }
-
-.socialmedia {
-  margin-top: 20%;
+/*travel eats*/
+.displayed-img{
+  width: 200px;
+  height: 280px;
+}
+.full-img {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 280px;
 }
 
+.travelEats{
+margin: auto;
+padding: 1%;
+display: grid;
+place-items: center;
+grid-template-columns: 1fr;
+}
+
+.thumb-bar img {
+width: 50px;
+height: 80px;
+cursor: pointer;
+}
 }
 
 /*computer screen*/
@@ -291,6 +298,7 @@ html {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
   }
+
   body {
     margin: 0;
     background: #FDFFFC;
@@ -301,6 +309,7 @@ html {
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.005em;
+    text-align: center;
   }
 
   h2 {
@@ -313,6 +322,7 @@ html {
   h3 {
     font-weight: 600;
     font-size: 15px;
+    color: #818479;
     line-height: 16px;
     letter-spacing: 0.005em;
   }
@@ -337,24 +347,6 @@ html {
     line-height: 16px;
     letter-spacing: 0.005em;
   }
-  
-  .mainimg {
-    max-height: 100%;
-    max-width: 220px;
-  }
-
-  .intro {
-    padding: 1em;
-    border: none;
-  }
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-  }
 
   p {
     font-weight: 400;
@@ -363,6 +355,7 @@ html {
     letter-spacing: 0.005em;
     color: #2A2B2A;
   }
+
 
   button {
     background: #818479;
@@ -382,6 +375,26 @@ html {
 
   button:active {
     background: #B5CBB7;
+  }
+  
+  .mainimg {
+    max-height: 100%;
+    max-width: 220px;
+  }
+
+  .intro {
+    padding: 1em;
+    border: none;
+  }
+
+  /*travel gallery*/
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
   }
 
   nav ul {
@@ -406,38 +419,62 @@ html {
     text-decoration: none;
   }
 
-  .contact{
-    margin: 0;
-    padding: 0;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-  }
-  .thumb-bar img {
-    display: block;
-    width: 20%;
-    float: left;
-    cursor: pointer;
-  }
+/*contact page*/
+.contact{
+  margin: 0;
+  padding: 5%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 4fr 4fr;
+}
+
+.socialmedia ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+/*travel eats page*/
 
   .displayed-img{
-    width: 640px;
-    height: 480px;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 640px;
-    height: 480px;
-    background-color: rgba(0,0,0,0);
+    width: 440px;
+    height: 600px;
+    align-items: center;
   }
   .full-img {
     position: relative;
     display: block;
-    width: 640px;
-    height: 480px;
+    width: 440px;
+    height: 600px;
   }
-  
 
+.travelEats{
+  margin: auto;
+  padding: 1%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 3fr 2fr;
+
+}
+
+.thumb-bar img {
+  width: 25%;
+  float: left;
+  cursor: pointer;
+}
+}
+
+.blog ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.about {
+  margin-right: 15%;
+  margin-left: 15%;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 5fr;
 }
