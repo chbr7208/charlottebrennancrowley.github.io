@@ -31,21 +31,9 @@ for ( const image of array){
     });
 };
 
-function mouseOver(){
-    if(displayedImage == 'IMG_churros.jpg') {
-        
-    }
-    else if(displayedImage == 'IMG_custard.jpg'){
 
-    }
-    else if(displayedImage == 'IMG_fries.JPG'){
-
-    }
-    else if(displayedImage == 'IMG_friets.JPG'){
-
-    }
-    else if(displayedImage == 'IMG_gelato.JPG'){
-
-    }
-}
+button.onclick = () => {
+    alert('hi I had lots of food abroad. Image 1: churros con chocolate while abroad. Image 2: A custard dessert from Lisbon. Image 3: Famous french fries from Amsterdam. Image 4:Pom friets with curried ketchup from Berlin. Image 5:Gelato from Florence. Image 6: Pizza from Florence. Image 7: Pasta from Rome. Image 8: Cafe con Leche in Barcelona.');
+  }
+  
 
